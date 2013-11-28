@@ -14,11 +14,14 @@
 				  	time 		: 5,
 				  	showText 	: true,
 				  	textColor 	: 'white',
-				  	bodyColor	: 'red',
+				  	bodyColor	: '#00CAFF',
 				  	borderColor : 'white',
 				  	radius 	    : 100,
 				  	bodyWidth   : 10,
-				  	borderWidth : 5
+				  	borderWidth : 10,
+				  	endCallBack : function(){
+				  		alert("FINISH!");
+				  	}
 				});
 			clock.step();
 
