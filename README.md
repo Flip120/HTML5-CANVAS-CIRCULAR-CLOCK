@@ -1,6 +1,6 @@
 HTML5-CANVAS-CIRCULAR-CLOCK
 ===========================
-
+```
 A HTML5 CIRCULAR COUNTDOWN CLOCK FOR DISPLAY IN CANVAS
 
 
@@ -8,12 +8,14 @@ GETTING STARTED:
 
 All you need is to get the 2d context of a html5 canvas element and pass it by parameter 
 to the Clock as the other parameters, here an example:
+```
 
+```js
 var canvas = document.getElementById("myCanvas");
 var cont = canvas.getContext("2d");
-
+```
 Next you need to create the clock passing the parameters you want:
-
+```js
 var clock = new Clock({ 
 		context 	  : cont, 
   	type 		    : Clock.TYPE_CLOCKWISE_INCREMENT,
@@ -29,11 +31,12 @@ var clock = new Clock({
   		alert("COUNTDOWN FINISHED!");
   	}
 });
+```
 
 Finally, you need to start the clock by calling the function "step()";
 
 The list of parameteres than you can override are this :
-
+```js
 {
   context          : cont, //The 2d context of the html5 canvas (No default value)
   type             : Clock.TYPE_CLOCKWISE_INCREMENT, //The type of the clock can be Clock.TYPE_CLOCKWISE_INCREMENT, Clock.TYPE_CLOCKWISE_DECREMENT, Clock.TYPE_COUNTERCLOCKWISE_INCREMENT, Clock.TYPE_COUNTERCLOCKWISE_DECREMENT(Default Clock.TYPE_CLOCKWISE_INCREMENT)
@@ -56,11 +59,13 @@ The list of parameteres than you can override are this :
   freq             : 10, //The frequency that the clock refresh it's state (In milliseconds) (Default 10)
 }
 
-
+```
 EXAMPLES
 ============
 
+```
 --AUTOMATIC USE--
+```js
 var canvas = document.getElementById("myCanvas");
 var cont = canvas.getContext("2d");
 var clock = new Clock({ 
@@ -80,8 +85,11 @@ var clock = new Clock({
 });
 
 clock.step();
-
+```
 --MANUAL USE--
+```
+
+```js
 var canvas = document.getElementById("myCanvas");
 var cont = canvas.getContext("2d");
 
@@ -108,3 +116,4 @@ clock.step();
 setInterval(function(){
   clock.paint();
 },10);
+```
