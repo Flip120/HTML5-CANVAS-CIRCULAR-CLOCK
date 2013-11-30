@@ -1,6 +1,6 @@
 HTML5-CANVAS-CIRCULAR-CLOCK
 ===========================
-```
+
 A HTML5 CIRCULAR COUNTDOWN CLOCK FOR DISPLAY IN CANVAS
 
 
@@ -8,7 +8,7 @@ GETTING STARTED:
 
 All you need is to get the 2d context of a html5 canvas element and pass it by parameter 
 to the Clock as the other parameters, here an example:
-```
+
 
 ```js
 var canvas = document.getElementById("myCanvas");
@@ -63,8 +63,9 @@ The list of parameteres than you can override are this :
 EXAMPLES
 ============
 
-```
+
 --AUTOMATIC USE--
+
 ```js
 var canvas = document.getElementById("myCanvas");
 var cont = canvas.getContext("2d");
