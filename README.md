@@ -88,7 +88,7 @@ var clock = new Clock({
 clock.step();
 ```
 --MANUAL USE--
-```
+
 
 ```js
 var canvas = document.getElementById("myCanvas");
